@@ -52,23 +52,22 @@
   /* FULL-WIDTH BROADSHEET MASTHEAD */
   .masthead {
     text-align: center;
-    border-bottom: 2px solid #141A23;
+    border-bottom: 2.4px solid #111827;
     padding-bottom: 4px;
   }
   .mast-date {
     font-family: Georgia, "Times New Roman", serif;
-    font-size: 58px;
+    font-size: 62px;
     font-weight: 900;
-    line-height: 0.95;
-    letter-spacing: -1.2px;
-    color: #111827;
+    line-height: 0.94;
+    letter-spacing: -1.4px;
+    color: #0F172A;
   }
-  .mast-date .hl { color: #B91C1C; }
   .mast-deck {
     margin-top: 3px;
     font-size: 11px;
     font-weight: 700;
-    color: #8B1E1E;
+    color: #7F1D1D;
     white-space: nowrap;
   }
 
@@ -343,50 +342,25 @@
   }
   .map-box {
     width: 100%;
-    height: 158px;
+    flex: 1;
+    min-height: 175px;
     border: 1px solid #CFC6B2;
-    background: #E8F1F6;
+    background: #F4F1E8;
     border-radius: 2px;
     overflow: hidden;
   }
   .map-box svg { width: 100%; height: 100%; display: block; }
 
-  .reg-legend {
-    margin-top: 5px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2.5px 6px;
-    padding: 4.5px 6px;
-    background: #F4EFE4;
-    border: 1px solid #DFD7C6;
-    border-radius: 2px;
-    font-size: 7.9px;
-    font-weight: 700;
-    color: #1F2937;
-  }
-  .rl-item {
-    display: flex;
-    align-items: center;
-    gap: 4px;
-    white-space: nowrap;
-  }
-  .rl-dot {
-    width: 7px;
-    height: 7px;
-    border-radius: 50%;
-    flex-shrink: 0;
-  }
-
   .briefs-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 3px 11px;
+    gap: 3.2px 11px;
     flex: 1;
     align-content: space-between;
   }
   .br {
     font-size: 8.95px;
-    line-height: 1.16;
+    line-height: 1.17;
     color: #1F2937;
     white-space: nowrap;
     overflow: hidden;
@@ -412,9 +386,9 @@
     border: 1px solid #D9BFA0;
     background: #FBF3E4;
     border-left: 3.5px solid #B91C1C;
-    padding: 3.5px 8px;
-    font-size: 7.85px;
-    line-height: 1.22;
+    padding: 4px 8px;
+    font-size: 7.95px;
+    line-height: 1.24;
     color: #27303F;
   }
   .audit-row {
@@ -422,7 +396,7 @@
     align-items: baseline;
     gap: 6px;
   }
-  .audit-row + .audit-row { margin-top: 1.5px; }
+  .audit-row + .audit-row { margin-top: 2px; }
   .audit-k {
     font-weight: 900;
     color: #991B1B;
@@ -436,16 +410,7 @@
     gap: 5.5px;
     flex-wrap: nowrap;
   }
-  .legend-inline .ep { font-size: 6.8px; padding: 0.5px 4px; }
-  .src-foot {
-    text-align: center;
-    font-size: 7.5px;
-    font-weight: 600;
-    color: #57606F;
-    padding-top: 1px;
-    letter-spacing: 0.1px;
-    white-space: nowrap;
-  }
+  .legend-inline .ep { font-size: 6.9px; padding: 0.5px 4px; }
 </style>
 </head>
 <body>
@@ -461,7 +426,7 @@
 
     <!-- FULL-WIDTH SERIF MASTHEAD -->
     <header class="masthead">
-      <h1 class="mast-date">Thursday <span class="hl">26 November</span> 2026</h1>
+      <h1 class="mast-date">Thursday 26 November 2026</h1>
       <div class="mast-deck">Storm blacks out ~1M Americans on Thanksgiving · Kuwait drone kills 2 Italians · EU deadlocks on €45bn Ukraine loan · Congo Ebola tops 12,000</div>
     </header>
 
@@ -579,35 +544,38 @@
       <article class="hero">
         <div class="art-box">
           <svg viewBox="0 0 324 106" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
-            <defs><linearGradient id="h3" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#172E6E"/><stop offset="100%" stop-color="#1E40AF"/></linearGradient></defs>
-            <rect width="324" height="106" fill="url(#h3)"/>
-            <g transform="translate(88,43)" fill="#FACC15">
-              <circle cx="0" cy="-27" r="2.2"/><circle cx="13.5" cy="-23.4" r="2.2"/><circle cx="23.4" cy="-13.5" r="2.2"/>
-              <circle cx="27" cy="0" r="2.2"/><circle cx="23.4" cy="13.5" r="2.2"/><circle cx="13.5" cy="23.4" r="2.2"/>
-              <circle cx="0" cy="27" r="2.2"/><circle cx="-13.5" cy="23.4" r="2.2"/><circle cx="-23.4" cy="13.5" r="2.2"/>
-              <circle cx="-27" cy="0" r="2.2"/><circle cx="-23.4" cy="-13.5" r="2.2"/><circle cx="-13.5" cy="-23.4" r="2.2"/>
+            <rect width="324" height="106" fill="#F6F3EC"/>
+            <!-- Left half: EU blue summit chamber with 12-star ring + leader table -->
+            <rect x="0" y="0" width="186" height="106" fill="#173072"/>
+            <g transform="translate(93,43)" fill="#FACC15">
+              <circle cx="0" cy="-28" r="2.3"/><circle cx="14" cy="-24.2" r="2.3"/><circle cx="24.2" cy="-14" r="2.3"/>
+              <circle cx="28" cy="0" r="2.3"/><circle cx="24.2" cy="14" r="2.3"/><circle cx="14" cy="24.2" r="2.3"/>
+              <circle cx="0" cy="28" r="2.3"/><circle cx="-14" cy="24.2" r="2.3"/><circle cx="-24.2" cy="14" r="2.3"/>
+              <circle cx="-28" cy="0" r="2.3"/><circle cx="-24.2" cy="-14" r="2.3"/><circle cx="-14" cy="-24.2" r="2.3"/>
             </g>
-            <text x="88" y="42" text-anchor="middle" font-family="Georgia,serif" font-size="16" font-weight="900" fill="#FFFFFF">€45bn</text>
-            <text x="88" y="53.5" text-anchor="middle" font-size="8.2" font-weight="900" fill="#FDE68A">NO DEAL</text>
-            <ellipse cx="88" cy="88" rx="68" ry="11" fill="#92400E" stroke="#F59E0B" stroke-width="1"/>
+            <text x="93" y="42" text-anchor="middle" font-family="Georgia,serif" font-size="16" font-weight="900" fill="#FFFFFF">€45bn</text>
+            <text x="93" y="54" text-anchor="middle" font-size="8.2" font-weight="900" fill="#FDE68A">NO DEAL</text>
+            <ellipse cx="93" cy="89" rx="74" ry="11" fill="#92400E" stroke="#F59E0B" stroke-width="1"/>
             <g fill="#0F172A">
-              <circle cx="32" cy="80" r="4"/><circle cx="48" cy="76" r="4"/><circle cx="68" cy="74" r="4"/>
-              <circle cx="88" cy="73" r="4"/><circle cx="108" cy="74" r="4"/><circle cx="128" cy="76" r="4"/><circle cx="144" cy="80" r="4"/>
+              <circle cx="32" cy="81" r="4.2"/><circle cx="50" cy="77" r="4.2"/><circle cx="71" cy="75" r="4.2"/>
+              <circle cx="93" cy="74" r="4.2"/><circle cx="115" cy="75" r="4.2"/><circle cx="136" cy="77" r="4.2"/><circle cx="154" cy="81" r="4.2"/>
             </g>
-            <line x1="168" y1="10" x2="168" y2="96" stroke="#93C5FD" stroke-width="1" stroke-dasharray="3,3"/>
-            <rect x="180" y="28" width="134" height="50" rx="2" fill="#EFF6FF"/>
-            <polygon points="176,28 247,8 318,28" fill="#DBEAFE" stroke="#1E40AF" stroke-width="1.2"/>
-            <text x="247" y="24.5" text-anchor="middle" font-family="Georgia,serif" font-size="9.2" font-weight="900" fill="#1E3A8A">ECB · DE COS</text>
-            <g fill="#BFDBFE" stroke="#1D4ED8" stroke-width="0.7">
-              <rect x="188" y="34" width="8" height="36"/><rect x="204" y="34" width="8" height="36"/>
-              <rect x="282" y="34" width="8" height="36"/><rect x="298" y="34" width="8" height="36"/>
+            <!-- Right half: 12+ hour summit clock + ECB De Cos badge -->
+            <rect x="196" y="7" width="118" height="16" rx="2" fill="#1E3A8A"/>
+            <text x="255" y="18" text-anchor="middle" font-size="8.2" font-weight="900" fill="#FFFFFF" letter-spacing="0.4">ECB → DE COS</text>
+            <circle cx="255" cy="50" r="22" fill="#FFFFFF" stroke="#1E3A8A" stroke-width="2.4"/>
+            <g stroke="#94A3B8" stroke-width="1.2">
+              <line x1="255" y1="31" x2="255" y2="35"/><line x1="255" y1="65" x2="255" y2="69"/>
+              <line x1="236" y1="50" x2="240" y2="50"/><line x1="270" y1="50" x2="274" y2="50"/>
             </g>
-            <circle cx="247" cy="52" r="14.5" fill="#1D4ED8"/>
-            <text x="247" y="58.5" text-anchor="middle" font-family="Georgia,serif" font-size="19" font-weight="900" fill="#FACC15">€</text>
-            <rect x="176" y="72" width="142" height="6" fill="#1E3A8A"/>
+            <line x1="255" y1="50" x2="255" y2="37" stroke="#1E293B" stroke-width="2.2" stroke-linecap="round"/>
+            <line x1="255" y1="50" x2="266" y2="50" stroke="#B91C1C" stroke-width="2" stroke-linecap="round"/>
+            <circle cx="255" cy="50" r="2.4" fill="#1E293B"/>
+            <rect x="218" y="75" width="74" height="13" rx="2" fill="#1E3A8A"/>
+            <text x="255" y="84.2" text-anchor="middle" font-size="7.6" font-weight="900" fill="#FFFFFF">12+ HOURS</text>
           </svg>
           <span class="num-badge r-eu">3</span>
-          <span class="art-pill">DEC 17–18 · NEW ECB</span>
+          <span class="art-pill red">NO DEAL</span>
         </div>
         <div class="meta-line"><span class="loc">BRUSSELS · EUROPE · SUMMIT</span><span class="ep ep-off">OFFICIAL</span></div>
         <h2 class="hero-h">EU summit deadlocks on €1.6tn budget &amp; €45bn Kyiv loan</h2>
@@ -725,17 +693,19 @@
       <article class="sec">
         <div class="art-box">
           <svg viewBox="0 0 240 68" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
-            <defs><linearGradient id="g8" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#D6CFC2"/><stop offset="100%" stop-color="#EDE6D8"/></linearGradient></defs>
+            <defs><linearGradient id="g8" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#9A5A3A"/><stop offset="65%" stop-color="#D9A97C"/><stop offset="100%" stop-color="#EFE2CE"/></linearGradient></defs>
             <rect width="240" height="68" fill="url(#g8)"/>
-            <path d="M68,38 Q48,14 82,4 Q116,10 106,38 Z" fill="#374151" opacity="0.72"/>
-            <path d="M90,38 Q94,20 118,14 Q136,20 124,38 Z" fill="#6B7280" opacity="0.58"/>
-            <rect x="12" y="29" width="30" height="39" fill="#52525B"/>
-            <rect x="46" y="35" width="28" height="33" fill="#3F3F46"/>
-            <polygon points="78,42 116,34 122,68 78,68" fill="#52525B"/>
-            <circle cx="88" cy="36" r="8.5" fill="#EA580C" opacity="0.82"/><circle cx="88" cy="36" r="3.8" fill="#FEF08A"/>
-            <polygon points="148,58 184,24 220,58" fill="#FFFFFF" stroke="#991B1B" stroke-width="1.3"/>
-            <rect x="180" y="39" width="8" height="15" fill="#DC2626"/><rect x="176.5" y="42.5" width="15" height="8" fill="#DC2626"/>
-            <rect x="0" y="57" width="240" height="11" fill="#78716C"/>
+            <path d="M74,38 Q54,12 92,3 Q128,9 114,38 Z" fill="#27272A" opacity="0.78"/>
+            <path d="M98,38 Q104,18 130,12 Q148,18 134,38 Z" fill="#52525B" opacity="0.62"/>
+            <rect x="10" y="28" width="32" height="40" fill="#3F3F46"/>
+            <rect x="46" y="34" width="30" height="34" fill="#27272A"/>
+            <polygon points="80,41 122,33 128,68 80,68" fill="#3F3F46"/>
+            <circle cx="94" cy="36" r="9" fill="#EA580C" opacity="0.88"/><circle cx="94" cy="36" r="4" fill="#FEF08A"/>
+            <!-- Distinct clinic/ambulance block with red cross -->
+            <rect x="150" y="33" width="66" height="25" rx="2" fill="#FFFFFF" stroke="#991B1B" stroke-width="1.3"/>
+            <rect x="178" y="38" width="6" height="15" fill="#DC2626"/><rect x="173.5" y="42.5" width="15" height="6" fill="#DC2626"/>
+            <rect x="200" y="37" width="12" height="9" fill="#93C5FD"/>
+            <rect x="0" y="57" width="240" height="11" fill="#57534E"/>
           </svg>
           <span class="num-badge r-me">8</span>
           <span class="art-pill amber">DEIR AL-BALAH</span>
@@ -837,72 +807,41 @@
       <div class="lower-col">
         <div class="sec-title">WHERE IT HAPPENED <span>pins 1–11 · dots = briefs</span></div>
         <div class="map-box">
-          <svg viewBox="4 2 314 162" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
-            <rect width="320" height="172" fill="#EAF2F7"/>
-            <g stroke="#CBD5E1" stroke-width="0.45" opacity="0.65">
-              <line x1="0" y1="43" x2="320" y2="43"/><line x1="0" y1="86" x2="320" y2="86"/><line x1="0" y1="129" x2="320" y2="129"/>
-              <line x1="80" y1="0" x2="80" y2="172"/><line x1="160" y1="0" x2="160" y2="172"/><line x1="240" y1="0" x2="240" y2="172"/>
+          <svg id="world-map" viewBox="0 0 320 176" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
+            <rect width="320" height="176" fill="#F4F1E8"/>
+            <g stroke="#E2DCCD" stroke-width="0.5">
+              <line x1="0" y1="44" x2="320" y2="44"/><line x1="0" y1="88" x2="320" y2="88"/><line x1="0" y1="132" x2="320" y2="132"/>
+              <line x1="80" y1="0" x2="80" y2="176"/><line x1="160" y1="0" x2="160" y2="176"/><line x1="240" y1="0" x2="240" y2="176"/>
             </g>
-            <!-- Authentic equirectangular world coastlines -->
-            <g fill="#D7CFC0" stroke="#7E8A9A" stroke-width="0.6" stroke-linejoin="round">
-              <path d="M12,24 L26,18 L48,20 L66,18 L86,25 L98,35 L108,32 L112,38 L100,45 L94,53 L87,56 L84,65 L78,63 L72,69 L68,77 L74,83 L78,86 L72,88 L64,80 L54,71 L46,61 L42,52 L32,42 L22,36 L14,32 Z"/>
-              <path d="M108,7 L132,6 L142,14 L132,27 L118,26 L108,16 Z"/>
-              <path d="M84,69 L93,71 L91,74 L82,72 Z"/>
-              <path d="M82,86 L95,88 L108,95 L119,105 L122,116 L114,129 L105,141 L97,156 L90,158 L87,145 L85,127 L79,113 L77,98 Z"/>
-              <path d="M148,46 L154,44 L158,39 L166,35 L169,28 L164,22 L171,16 L181,14 L189,18 L187,27 L180,31 L186,33 L196,30 L198,42 L188,49 L181,51 L176,54 L173,47 L166,47 L162,53 L157,49 L154,52 L147,52 Z"/>
-              <path d="M153,33 L158,32 L159,39 L153,40 Z"/>
-              <path d="M147,57 L161,55 L175,58 L188,61 L194,70 L202,77 L206,85 L199,98 L195,112 L189,124 L181,138 L173,139 L167,125 L164,108 L158,95 L146,91 L139,82 L139,69 Z"/>
-              <path d="M201,112 L205,110 L204,124 L199,124 Z"/>
-              <path d="M196,30 L214,20 L242,16 L274,18 L302,24 L310,32 L296,38 L286,43 L283,52 L277,50 L274,56 L276,63 L268,72 L258,76 L255,86 L248,88 L245,79 L238,76 L232,87 L225,85 L220,73 L210,70 L204,76 L195,70 L194,61 L200,56 L194,49 L198,42 Z"/>
-              <path d="M283,44 L289,41 L290,50 L283,56 L279,53 Z"/>
-              <path d="M267,72 L270,71 L270,76 L267,76 Z"/>
-              <path d="M268,80 L274,80 L276,90 L269,89 Z"/>
-              <path d="M244,91 L254,97 L251,100 L242,94 Z"/>
-              <path d="M254,100 L267,102 L267,105 L254,103 Z"/>
-              <path d="M258,90 L267,89 L268,97 L259,97 Z"/>
-              <path d="M278,97 L294,100 L293,106 L278,103 Z"/>
-              <path d="M261,115 L278,111 L292,115 L300,127 L296,139 L284,142 L274,136 L262,135 L258,125 Z"/>
-              <path d="M286,144 L292,144 L290,149 L286,148 Z"/>
-              <path d="M307,139 L312,136 L313,144 L306,152 L303,149 Z"/>
-            </g>
+            <!-- Publication-grade dot-matrix continents populated deterministically on load -->
+            <g id="dot-land" fill="#9FA8B3"></g>
             <!-- Briefs 12-37 location dots -->
-            <g stroke="#FFFFFF" stroke-width="0.55">
-              <circle cx="158" cy="36" r="2.3" fill="#1E4D8C"/><circle cx="161" cy="40" r="2.3" fill="#1E4D8C"/><circle cx="166" cy="42" r="2.3" fill="#1E4D8C"/><circle cx="159" cy="47" r="2.3" fill="#1E4D8C"/>
-              <circle cx="185" cy="61" r="2.3" fill="#7E3F8F"/><circle cx="195" cy="98" r="2.3" fill="#7E3F8F"/><circle cx="144" cy="79" r="2.3" fill="#7E3F8F"/><circle cx="164" cy="83" r="2.3" fill="#7E3F8F"/><circle cx="161" cy="75" r="2.3" fill="#7E3F8F"/>
-              <circle cx="271" cy="43" r="2.3" fill="#9F1239"/><circle cx="263" cy="69" r="2.3" fill="#9F1239"/><circle cx="261" cy="48" r="2.3" fill="#9F1239"/>
-              <circle cx="255" cy="99" r="2.3" fill="#0E7490"/><circle cx="262" cy="92" r="2.3" fill="#0E7490"/>
-              <circle cx="241" cy="69" r="2.3" fill="#B91C1C"/><circle cx="229" cy="63" r="2.3" fill="#B91C1C"/>
-              <circle cx="209" cy="66" r="2.3" fill="#B45309"/>
-              <circle cx="71" cy="72" r="2.3" fill="#1F6F50"/><circle cx="78" cy="54" r="2.3" fill="#1F6F50"/>
-              <circle cx="112" cy="116" r="2.3" fill="#656324"/><circle cx="101" cy="138" r="2.3" fill="#656324"/>
-              <circle cx="309" cy="144" r="2.3" fill="#2D6A7E"/>
+            <g stroke="#FFFFFF" stroke-width="0.6">
+              <circle cx="155" cy="38" r="2.4" fill="#1E4D8C"/><circle cx="157" cy="42" r="2.4" fill="#1E4D8C"/><circle cx="163" cy="44" r="2.4" fill="#1E4D8C"/><circle cx="156" cy="52" r="2.4" fill="#1E4D8C"/>
+              <circle cx="183" cy="64" r="2.4" fill="#7E3F8F"/><circle cx="188" cy="102" r="2.4" fill="#7E3F8F"/><circle cx="141" cy="86" r="2.4" fill="#7E3F8F"/><circle cx="161" cy="88" r="2.4" fill="#7E3F8F"/><circle cx="158" cy="81" r="2.4" fill="#7E3F8F"/>
+              <circle cx="266" cy="51" r="2.4" fill="#9F1239"/><circle cx="257" cy="73" r="2.4" fill="#9F1239"/><circle cx="259" cy="51" r="2.4" fill="#9F1239"/>
+              <circle cx="251" cy="108" r="2.4" fill="#0E7490"/><circle cx="255" cy="96" r="2.4" fill="#0E7490"/>
+              <circle cx="236" cy="71" r="2.4" fill="#B91C1C"/><circle cx="224" cy="66" r="2.4" fill="#B91C1C"/>
+              <circle cx="205" cy="68" r="2.4" fill="#B45309"/>
+              <circle cx="66" cy="77" r="2.4" fill="#1F6F50"/><circle cx="72" cy="58" r="2.4" fill="#1F6F50"/>
+              <circle cx="113" cy="118" r="2.4" fill="#656324"/><circle cx="103" cy="142" r="2.4" fill="#656324"/>
+              <circle cx="311" cy="149" r="2.4" fill="#2D6A7E"/>
             </g>
             <!-- Numbered pins 1-11 -->
             <g font-family="Segoe UI,Arial,sans-serif" font-size="6.9" font-weight="800" text-anchor="middle" fill="#FFFFFF">
-              <circle cx="96" cy="46" r="6.8" fill="#1F6F50" stroke="#FFF" stroke-width="1"/><text x="96" y="48.4">1</text>
-              <circle cx="206" cy="62" r="6.8" fill="#B45309" stroke="#FFF" stroke-width="1"/><text x="206" y="64.4">2</text>
-              <circle cx="164" cy="36" r="6.8" fill="#1E4D8C" stroke="#FFF" stroke-width="1"/><text x="164" y="38.4">3</text>
-              <circle cx="187" cy="37" r="6.4" fill="#1E4D8C" stroke="#FFF" stroke-width="1"/><text x="187" y="39.4">4</text>
-              <circle cx="183" cy="95" r="6.4" fill="#7E3F8F" stroke="#FFF" stroke-width="1"/><text x="183" y="97.4">5</text>
-              <circle cx="276" cy="53" r="6.4" fill="#9F1239" stroke="#FFF" stroke-width="1"/><text x="276" y="55.4">6</text>
-              <circle cx="84" cy="56" r="6.4" fill="#1F6F50" stroke="#FFF" stroke-width="1"/><text x="84" y="58.4">7</text>
-              <circle cx="192" cy="55" r="6.4" fill="#B45309" stroke="#FFF" stroke-width="1"/><text x="192" y="57.4">8</text>
-              <circle cx="249" cy="80" r="6.4" fill="#0E7490" stroke="#FFF" stroke-width="1"/><text x="249" y="82.4">9</text>
-              <circle cx="290" cy="146" r="6.4" fill="#2D6A7E" stroke="#FFF" stroke-width="1"/><text x="290" y="148.4">10</text>
-              <circle cx="225" cy="76" r="6.4" fill="#B91C1C" stroke="#FFF" stroke-width="1"/><text x="225" y="78.4">11</text>
+              <circle cx="94" cy="47" r="6.8" fill="#1F6F50" stroke="#FFF" stroke-width="1"/><text x="94" y="49.4">1</text>
+              <circle cx="201" cy="66" r="6.8" fill="#B45309" stroke="#FFF" stroke-width="1"/><text x="201" y="68.4">2</text>
+              <circle cx="160" cy="39" r="6.8" fill="#1E4D8C" stroke="#FFF" stroke-width="1"/><text x="160" y="41.4">3</text>
+              <circle cx="183" cy="39" r="6.4" fill="#1E4D8C" stroke="#FFF" stroke-width="1"/><text x="183" y="41.4">4</text>
+              <circle cx="181" cy="98" r="6.4" fill="#7E3F8F" stroke="#FFF" stroke-width="1"/><text x="181" y="100.4">5</text>
+              <circle cx="270" cy="56" r="6.4" fill="#9F1239" stroke="#FFF" stroke-width="1"/><text x="270" y="58.4">6</text>
+              <circle cx="80" cy="58" r="6.4" fill="#1F6F50" stroke="#FFF" stroke-width="1"/><text x="80" y="60.4">7</text>
+              <circle cx="187" cy="60" r="6.4" fill="#B45309" stroke="#FFF" stroke-width="1"/><text x="187" y="62.4">8</text>
+              <circle cx="245" cy="84" r="6.4" fill="#0E7490" stroke="#FFF" stroke-width="1"/><text x="245" y="86.4">9</text>
+              <circle cx="288" cy="148" r="6.4" fill="#2D6A7E" stroke="#FFF" stroke-width="1"/><text x="288" y="150.4">10</text>
+              <circle cx="220" cy="77" r="6.4" fill="#B91C1C" stroke="#FFF" stroke-width="1"/><text x="220" y="79.4">11</text>
             </g>
           </svg>
-        </div>
-        <div class="reg-legend">
-          <div class="rl-item"><span class="rl-dot r-eu"></span>Europe (10)</div>
-          <div class="rl-item"><span class="rl-dot r-af"></span>Africa (6)</div>
-          <div class="rl-item"><span class="rl-dot r-ea"></span>East Asia (4)</div>
-          <div class="rl-item"><span class="rl-dot r-na"></span>N. America (4)</div>
-          <div class="rl-item"><span class="rl-dot r-sea"></span>SE Asia (3)</div>
-          <div class="rl-item"><span class="rl-dot r-me"></span>Middle East (3)</div>
-          <div class="rl-item"><span class="rl-dot r-sa"></span>South Asia (3)</div>
-          <div class="rl-item"><span class="rl-dot r-oc"></span>Oceania (2)</div>
-          <div class="rl-item"><span class="rl-dot r-la"></span>LatAm (2)</div>
         </div>
       </div>
 
@@ -939,7 +878,7 @@
       </div>
     </section>
 
-    <!-- BOTTOM DATE CHECK + EPISTEMIC LEGEND + WIRE CREDITS -->
+    <!-- BOTTOM DATE CHECK + EPISTEMIC LEGEND -->
     <footer class="audit-bar">
       <div class="audit-row">
         <span class="audit-k">DATE CHECK:</span>
@@ -951,11 +890,66 @@
         <span class="ep ep-con">CONFIRMED</span><span>2+ major outlets</span>
         <span class="ep ep-rep">REPORTED</span><span>one outlet / local report</span>
         <span class="ep ep-clm">CLAIM</span><span>disputed / one side</span>
+        <span>· Original vector art &amp; map drawn in code · Wire-sourced neutral digest</span>
       </div>
     </footer>
-    <div class="src-foot">Sources: AP · Reuters · BBC · Al Jazeera · Guardian · EU Council · WHO · BoK · ONS · FCC · PTI · SCMP · ABC · Pravda · KCNA · FIDE · Original vector art &amp; map drawn in code</div>
 
   </div>
 </div>
+<script>
+(() => {
+  const POLYS = [
+    [[-166,60],[-162,66],[-156,71],[-140,70],[-125,70],[-110,69],[-95,68],[-82,63],[-78,52],[-64,60],[-55,52],[-60,46],[-67,45],[-70,42],[-75,38],[-76,35],[-81,31],[-80,25],[-82,25],[-83,29],[-89,30],[-97,26],[-96,19],[-90,21],[-87,21],[-88,16],[-83,15],[-83,10],[-78,8],[-80,8],[-85,10],[-92,15],[-105,20],[-110,24],[-114,31],[-117,32],[-122,37],[-124,42],[-124,49],[-132,54],[-140,60],[-150,60],[-160,56]],
+    [[-52,60],[-44,60],[-35,66],[-20,70],[-18,77],[-30,81],[-55,80],[-65,76],[-56,68]],
+    [[-85,22],[-74,20],[-75,21],[-83,23]],
+    [[-74,19],[-68,18],[-69,20],[-73,20]],
+    [[-78,9],[-72,12],[-62,10],[-50,1],[-35,-6],[-38,-14],[-40,-22],[-48,-26],[-53,-34],[-58,-38],[-65,-43],[-67,-54],[-72,-54],[-75,-46],[-73,-37],[-71,-18],[-81,-5],[-79,2]],
+    [[-10,52],[-6,55],[-2,58],[0,53],[1,51],[-5,50]],
+    [[-9,37],[-9,43],[-2,43],[-4,48],[2,51],[8,54],[10,57],[12,56],[18,55],[22,57],[24,60],[20,63],[24,66],[28,70],[18,69],[10,64],[5,61],[8,58],[12,56],[20,60],[30,60],[38,65],[48,67],[58,68],[60,55],[46,48],[39,45],[31,46],[28,41],[24,38],[21,37],[19,41],[14,45],[16,41],[18,40],[15,38],[12,41],[8,44],[3,42],[0,38],[-5,36]],
+    [[-17,15],[-13,27],[-6,35],[3,37],[11,37],[11,33],[20,32],[32,31],[35,24],[43,12],[51,11],[41,-2],[40,-15],[35,-24],[28,-33],[18,-34],[14,-22],[12,-6],[9,4],[2,6],[-8,5],[-16,11]],
+    [[44,-25],[47,-25],[50,-14],[48,-13],[44,-19]],
+    [[27,41],[36,37],[35,31],[39,21],[44,13],[53,16],[60,22],[56,26],[50,29],[56,27],[62,25],[68,24],[73,19],[77,8],[80,14],[86,21],[92,21],[97,16],[100,13],[103,1],[104,2],[102,8],[105,10],[109,13],[107,18],[110,20],[116,23],[121,28],[122,31],[120,35],[122,37],[118,39],[124,40],[127,35],[129,36],[129,41],[135,44],[141,53],[145,59],[156,51],[162,60],[175,66],[170,70],[140,72],[105,75],[75,72],[60,68],[58,55],[48,46],[41,42]],
+    [[80,6],[82,7],[81,10],[79,9]],
+    [[130,31],[134,34],[140,36],[141,41],[145,44],[141,45],[139,39],[135,35],[130,33]],
+    [[120,22],[122,25],[121,25],[120,23]],
+    [[120,18],[123,14],[126,7],[122,7],[120,14]],
+    [[95,5],[100,1],[106,-6],[104,-6],[97,2]],
+    [[106,-6],[115,-8],[115,-9],[106,-7]],
+    [[109,2],[118,5],[118,-3],[110,-3]],
+    [[119,1],[125,1],[122,-5],[119,-4]],
+    [[132,-2],[141,-3],[150,-10],[144,-9],[134,-4]],
+    [[114,-22],[122,-18],[131,-12],[136,-12],[142,-11],[146,-18],[153,-26],[151,-34],[147,-38],[140,-38],[135,-34],[124,-34],[115,-34],[113,-26]],
+    [[144,-41],[148,-41],[147,-43],[145,-43]],
+    [[173,-35],[178,-38],[175,-41],[170,-46],[167,-46],[172,-41],[174,-37]]
+  ];
+  const inPoly = (x, y, p) => {
+    let inside = false;
+    for (let i = 0, j = p.length - 1; i < p.length; j = i++) {
+      const xi = p[i][0], yi = p[i][1], xj = p[j][0], yj = p[j][1];
+      if (((yi > y) !== (yj > y)) && (x < (xj - xi) * (y - yi) / (yj - yi + 1e-12) + xi)) inside = !inside;
+    }
+    return inside;
+  };
+  const g = document.getElementById('dot-land');
+  const ns = 'http://www.w3.org/2000/svg';
+  const step = 4.4;
+  for (let y = 7; y <= 169; y += step) {
+    const lat = 78 - (y - 6) / 164 * 136;
+    for (let x = 5; x <= 315; x += step) {
+      const lon = -170 + (x - 4) / 312 * 350;
+      for (const poly of POLYS) {
+        if (inPoly(lon, lat, poly)) {
+          const c = document.createElementNS(ns, 'circle');
+          c.setAttribute('cx', x.toFixed(1));
+          c.setAttribute('cy', y.toFixed(1));
+          c.setAttribute('r', '1.45');
+          g.appendChild(c);
+          break;
+        }
+      }
+    }
+  }
+})();
+</script>
 </body>
 </html>
