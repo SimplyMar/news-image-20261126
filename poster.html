@@ -52,22 +52,23 @@
   /* FULL-WIDTH BROADSHEET MASTHEAD */
   .masthead {
     text-align: center;
-    border-bottom: 2.4px solid #111827;
+    border-bottom: 2.2px solid #141A23;
     padding-bottom: 4px;
   }
   .mast-date {
     font-family: Georgia, "Times New Roman", serif;
-    font-size: 62px;
+    font-size: 60px;
     font-weight: 900;
     line-height: 0.94;
-    letter-spacing: -1.4px;
-    color: #0F172A;
+    letter-spacing: -1.3px;
+    color: #111827;
   }
+  .mast-date .hl { color: #B91C1C; }
   .mast-deck {
     margin-top: 3px;
     font-size: 11px;
     font-weight: 700;
-    color: #7F1D1D;
+    color: #8B1E1E;
     white-space: nowrap;
   }
 
@@ -254,11 +255,11 @@
 
   .hero-h {
     font-family: Georgia, "Times New Roman", serif;
-    font-size: 17.6px;
+    font-size: 18.2px;
     font-weight: 900;
-    line-height: 1.07;
+    line-height: 1.06;
     color: #111827;
-    letter-spacing: -0.25px;
+    letter-spacing: -0.3px;
   }
   .hero-p {
     font-size: 9.35px;
@@ -295,11 +296,11 @@
   }
   .sec-h {
     font-family: Georgia, "Times New Roman", serif;
-    font-size: 13.4px;
+    font-size: 13.7px;
     font-weight: 900;
-    line-height: 1.08;
+    line-height: 1.07;
     color: #111827;
-    letter-spacing: -0.2px;
+    letter-spacing: -0.22px;
   }
   .sec-p {
     font-size: 9px;
@@ -344,8 +345,8 @@
     width: 100%;
     flex: 1;
     min-height: 175px;
-    border: 1px solid #CFC6B2;
-    background: #F4F1E8;
+    border: 1px solid #C9BFA9;
+    background: #E6F0F6;
     border-radius: 2px;
     overflow: hidden;
   }
@@ -426,7 +427,7 @@
 
     <!-- FULL-WIDTH SERIF MASTHEAD -->
     <header class="masthead">
-      <h1 class="mast-date">Thursday 26 November 2026</h1>
+      <h1 class="mast-date">Thursday <span class="hl">26 November</span> 2026</h1>
       <div class="mast-deck">Storm blacks out ~1M Americans on Thanksgiving · Kuwait drone kills 2 Italians · EU deadlocks on €45bn Ukraine loan · Congo Ebola tops 12,000</div>
     </header>
 
@@ -544,38 +545,35 @@
       <article class="hero">
         <div class="art-box">
           <svg viewBox="0 0 324 106" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
-            <rect width="324" height="106" fill="#F6F3EC"/>
-            <!-- Left half: EU blue summit chamber with 12-star ring + leader table -->
-            <rect x="0" y="0" width="186" height="106" fill="#173072"/>
-            <g transform="translate(93,43)" fill="#FACC15">
-              <circle cx="0" cy="-28" r="2.3"/><circle cx="14" cy="-24.2" r="2.3"/><circle cx="24.2" cy="-14" r="2.3"/>
-              <circle cx="28" cy="0" r="2.3"/><circle cx="24.2" cy="14" r="2.3"/><circle cx="14" cy="24.2" r="2.3"/>
-              <circle cx="0" cy="28" r="2.3"/><circle cx="-14" cy="24.2" r="2.3"/><circle cx="-24.2" cy="14" r="2.3"/>
-              <circle cx="-28" cy="0" r="2.3"/><circle cx="-24.2" cy="-14" r="2.3"/><circle cx="-14" cy="-24.2" r="2.3"/>
+            <defs><linearGradient id="h3" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#172E6E"/><stop offset="100%" stop-color="#1E40AF"/></linearGradient></defs>
+            <rect width="324" height="106" fill="url(#h3)"/>
+            <g transform="translate(88,43)" fill="#FACC15">
+              <circle cx="0" cy="-27" r="2.2"/><circle cx="13.5" cy="-23.4" r="2.2"/><circle cx="23.4" cy="-13.5" r="2.2"/>
+              <circle cx="27" cy="0" r="2.2"/><circle cx="23.4" cy="13.5" r="2.2"/><circle cx="13.5" cy="23.4" r="2.2"/>
+              <circle cx="0" cy="27" r="2.2"/><circle cx="-13.5" cy="23.4" r="2.2"/><circle cx="-23.4" cy="13.5" r="2.2"/>
+              <circle cx="-27" cy="0" r="2.2"/><circle cx="-23.4" cy="-13.5" r="2.2"/><circle cx="-13.5" cy="-23.4" r="2.2"/>
             </g>
-            <text x="93" y="42" text-anchor="middle" font-family="Georgia,serif" font-size="16" font-weight="900" fill="#FFFFFF">€45bn</text>
-            <text x="93" y="54" text-anchor="middle" font-size="8.2" font-weight="900" fill="#FDE68A">NO DEAL</text>
-            <ellipse cx="93" cy="89" rx="74" ry="11" fill="#92400E" stroke="#F59E0B" stroke-width="1"/>
+            <text x="88" y="42" text-anchor="middle" font-family="Georgia,serif" font-size="16" font-weight="900" fill="#FFFFFF">€45bn</text>
+            <text x="88" y="54" text-anchor="middle" font-size="8.2" font-weight="900" fill="#FDE68A">NO DEAL</text>
+            <ellipse cx="88" cy="88" rx="68" ry="11" fill="#92400E" stroke="#F59E0B" stroke-width="1"/>
             <g fill="#0F172A">
-              <circle cx="32" cy="81" r="4.2"/><circle cx="50" cy="77" r="4.2"/><circle cx="71" cy="75" r="4.2"/>
-              <circle cx="93" cy="74" r="4.2"/><circle cx="115" cy="75" r="4.2"/><circle cx="136" cy="77" r="4.2"/><circle cx="154" cy="81" r="4.2"/>
+              <circle cx="32" cy="80" r="4"/><circle cx="48" cy="76" r="4"/><circle cx="68" cy="74" r="4"/>
+              <circle cx="88" cy="73" r="4"/><circle cx="108" cy="74" r="4"/><circle cx="128" cy="76" r="4"/><circle cx="144" cy="80" r="4"/>
             </g>
-            <!-- Right half: 12+ hour summit clock + ECB De Cos badge -->
-            <rect x="196" y="7" width="118" height="16" rx="2" fill="#1E3A8A"/>
-            <text x="255" y="18" text-anchor="middle" font-size="8.2" font-weight="900" fill="#FFFFFF" letter-spacing="0.4">ECB → DE COS</text>
-            <circle cx="255" cy="50" r="22" fill="#FFFFFF" stroke="#1E3A8A" stroke-width="2.4"/>
-            <g stroke="#94A3B8" stroke-width="1.2">
-              <line x1="255" y1="31" x2="255" y2="35"/><line x1="255" y1="65" x2="255" y2="69"/>
-              <line x1="236" y1="50" x2="240" y2="50"/><line x1="270" y1="50" x2="274" y2="50"/>
+            <line x1="168" y1="10" x2="168" y2="96" stroke="#93C5FD" stroke-width="1" stroke-dasharray="3,3"/>
+            <rect x="180" y="28" width="134" height="50" rx="2" fill="#EFF6FF"/>
+            <polygon points="176,28 247,8 318,28" fill="#DBEAFE" stroke="#1E40AF" stroke-width="1.2"/>
+            <text x="247" y="24.5" text-anchor="middle" font-family="Georgia,serif" font-size="9.2" font-weight="900" fill="#1E3A8A">ECB · DE COS</text>
+            <g fill="#BFDBFE" stroke="#1D4ED8" stroke-width="0.7">
+              <rect x="188" y="34" width="8" height="36"/><rect x="204" y="34" width="8" height="36"/>
+              <rect x="282" y="34" width="8" height="36"/><rect x="298" y="34" width="8" height="36"/>
             </g>
-            <line x1="255" y1="50" x2="255" y2="37" stroke="#1E293B" stroke-width="2.2" stroke-linecap="round"/>
-            <line x1="255" y1="50" x2="266" y2="50" stroke="#B91C1C" stroke-width="2" stroke-linecap="round"/>
-            <circle cx="255" cy="50" r="2.4" fill="#1E293B"/>
-            <rect x="218" y="75" width="74" height="13" rx="2" fill="#1E3A8A"/>
-            <text x="255" y="84.2" text-anchor="middle" font-size="7.6" font-weight="900" fill="#FFFFFF">12+ HOURS</text>
+            <circle cx="247" cy="52" r="14.5" fill="#1D4ED8"/>
+            <text x="247" y="58.5" text-anchor="middle" font-family="Georgia,serif" font-size="19" font-weight="900" fill="#FACC15">€</text>
+            <rect x="176" y="72" width="142" height="6" fill="#1E3A8A"/>
           </svg>
           <span class="num-badge r-eu">3</span>
-          <span class="art-pill red">NO DEAL</span>
+          <span class="art-pill">DEC 17–18 · NEW ECB</span>
         </div>
         <div class="meta-line"><span class="loc">BRUSSELS · EUROPE · SUMMIT</span><span class="ep ep-off">OFFICIAL</span></div>
         <h2 class="hero-h">EU summit deadlocks on €1.6tn budget &amp; €45bn Kyiv loan</h2>
@@ -808,13 +806,13 @@
         <div class="sec-title">WHERE IT HAPPENED <span>pins 1–11 · dots = briefs</span></div>
         <div class="map-box">
           <svg id="world-map" viewBox="0 0 320 176" preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
-            <rect width="320" height="176" fill="#F4F1E8"/>
-            <g stroke="#E2DCCD" stroke-width="0.5">
+            <rect width="320" height="176" fill="#E6F0F6"/>
+            <g stroke="#CFDDE7" stroke-width="0.5">
               <line x1="0" y1="44" x2="320" y2="44"/><line x1="0" y1="88" x2="320" y2="88"/><line x1="0" y1="132" x2="320" y2="132"/>
               <line x1="80" y1="0" x2="80" y2="176"/><line x1="160" y1="0" x2="160" y2="176"/><line x1="240" y1="0" x2="240" y2="176"/>
             </g>
             <!-- Publication-grade dot-matrix continents populated deterministically on load -->
-            <g id="dot-land" fill="#9FA8B3"></g>
+            <g id="dot-land" fill="#7C8A97"></g>
             <!-- Briefs 12-37 location dots -->
             <g stroke="#FFFFFF" stroke-width="0.6">
               <circle cx="155" cy="38" r="2.4" fill="#1E4D8C"/><circle cx="157" cy="42" r="2.4" fill="#1E4D8C"/><circle cx="163" cy="44" r="2.4" fill="#1E4D8C"/><circle cx="156" cy="52" r="2.4" fill="#1E4D8C"/>
@@ -942,7 +940,7 @@
           const c = document.createElementNS(ns, 'circle');
           c.setAttribute('cx', x.toFixed(1));
           c.setAttribute('cy', y.toFixed(1));
-          c.setAttribute('r', '1.45');
+          c.setAttribute('r', '1.55');
           g.appendChild(c);
           break;
         }
